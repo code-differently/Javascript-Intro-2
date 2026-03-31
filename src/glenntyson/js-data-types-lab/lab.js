@@ -119,6 +119,7 @@ console.log(`Grade: ${grade}`);
 // How do arrays and objects differ?
 // Arrays are lists.
 // Objects store data with labels (keys).
+//
 
 // When would you use each in real applications?
 // Arrays for lists (like scores).
