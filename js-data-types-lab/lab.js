@@ -1,6 +1,6 @@
-// =====================
-// Part 1: Strings
-// =====================
+
+// Part 1: strings
+
 
 let fullName = "James Barclay";
 
@@ -9,7 +9,7 @@ console.log("Uppercase:", fullName.toUpperCase());
 console.log("Includes Barclay:", fullName.includes("Barclay"));
 console.log("First Name:", fullName.slice(0, 5));
 
-// Mini Challenge
+// mini challenge
 function greet(name) {
   return "HELLO, " + name.toUpperCase() + "!";
 }
@@ -17,14 +17,13 @@ function greet(name) {
 console.log(greet("James Barclay"));
 
 // Check for Understanding:
-// 1. .length returns number of characters in a string
-// 2. .includes() returns true or false
-// 3. .slice() extracts part of a string
+// 1. .length basically returns number of characters in a string
+// 2. .includes() just returns true or false
+// 3. .slice() just extracts part of a string
 
 
-// =====================
-// Part 2: Numbers
-// =====================
+// Part 2: numbers
+
 
 let num1 = 10;
 let num2 = 3;
@@ -38,7 +37,7 @@ console.log("Remainder:", num1 % num2);
 console.log("Rounded:", Math.round(3.7));
 console.log("Random 1-10:", Math.floor(Math.random() * 10) + 1);
 
-// Mini Challenge
+// mini challenge
 function evenOrOdd(num) {
   if (num % 2 === 0) {
     return "Even";
@@ -55,27 +54,26 @@ console.log(evenOrOdd(7));
 // 3. Math.floor() rounds down to the nearest
 
 
-// =====================
-// Part 3: Arrays
-// =====================
+
+// Part 3: arrays
 
 let students = ["A", "B", "C", "D"];
 
-// Print all students
+// print all students
 for (let i = 0; i < students.length; i++) {
   console.log(students[i]);
 }
 
-// Add new student
+// add new student
 students.push("E");
 
-// Remove last student
+// remove last student
 students.pop();
 
-// Total number
+// total number
 console.log("Total Students:", students.length);
 
-// Mini Challenge
+
 function sumArray(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -92,9 +90,9 @@ console.log("Sum:", sumArray([1, 2, 3, 4]));
 // 3. Loops help go through each item
 
 
-// =====================
-// Part 4: Objects
-// =====================
+
+// Part 4: objects
+
 
 let car = {
   brand: "Ford",
@@ -102,38 +100,36 @@ let car = {
   year: 2000
 };
 
-// Print properties
+// print properties
 console.log(car.brand);
 console.log(car.model);
 console.log(car.year);
 
-// Update year
+// update year
 car.year = 2000;
 
-// Add new property
+// add color
 car.color = "Silver";
 
-// Loop through object
+// looping through the object
 for (let key in car) {
   console.log(key, car[key]);
 }
 
-// Mini Challenge
+
 function describePerson(person) {
   return person.name + " is " + person.age + " years old";
 }
 
 console.log(describePerson({ name: "James Barclay", age: 34 }));
 
-// Check for Understanding:
-// 1. Key-value = property: value
-// 2. Use dot or bracket notation
+//check understanding
+// 1. Key-value is basically property: value
+// 2. Use dot/bracket notation
 // 3. Use objects for structured data
 
 
-// =====================
-// Final Challenge
-// =====================
+
 
 let student = {
   name: "James Barclay",
@@ -166,9 +162,8 @@ console.log("Average:", average);
 console.log("Grade:", grade);
 
 
-// =====================
+
 // Reflection
-// =====================
 
 // 1. Easiest: Strings because methods are simple and clear
 // 2. Most confusing: Objects loops (for...in)
