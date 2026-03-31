@@ -134,7 +134,6 @@ function getFinalGrades(average) {
   }
 }
 
-// FIXED: use the correct function names (your logic kept the same)
 let average = calculateAverage(student.scores);
 let grade = getFinalGrades(average);
 
