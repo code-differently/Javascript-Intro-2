@@ -52,7 +52,7 @@ let roundedNum = Math.round(3.7);
 
 console.log("Rounded Number: " + roundedNum);
 
-let random = Math.random();
+let random = Math.floor(Math.random() * 10) + 1;
 
 console.log("Random Number: " + random);
 
