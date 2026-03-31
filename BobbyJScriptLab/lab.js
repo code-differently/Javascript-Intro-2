@@ -134,7 +134,7 @@ car.year = 2024;
 console.log("Updated year: ", car.year);
 
 car.color = "black";
-console.log("Car added: ", car.color);
+console.log("Color added: ", car.color);
 
 for (let key in car) {
     console.log(key, car[key]);
@@ -154,4 +154,61 @@ console.log(describePerson(bobby));
 1. A key-value pair is a label (key) paired with its data (value). like name: "Bobby"
 2. You access object data using dot notation (person.name) or bracket notation (person["name"])
 3. Use an object when data has named properties, use an array when data is a simple list
+*/
+
+//Final Challenge: Student Grade Calculator
+const student = {
+  name: "Amani",
+  scores: [80, 90, 75, 100]
+};
+
+
+function calculateAverage(scores) {
+  let total = 0;
+
+  
+  for (let i = 0; i < scores.length; i++) {
+    total += scores[i];
+  }
+
+  return total / scores.length;
+}
+
+
+function getGrade(avg) {
+  if (avg >= 90) {
+    return "A";
+  } else if (avg >= 80) {
+    return "B";
+  } else if (avg >= 70) {
+    return "C";
+  } else if (avg >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+
+const average = calculateAverage(student.scores);
+const grade = getGrade(average);
+
+
+console.log("Name:", student.name);
+console.log("Average:", Math.round(average));
+console.log("Grade:", grade);
+
+/*
+At the bottom of your file, answer:
+
+Which data type felt easiest?
+Which one was most confusing?
+How do arrays and objects differ?
+When would you use each in real applications?
+
+1. Strings felt easiest because they are straightforward and I use them often.
+2.I definitely need more practice with arrays and objects, but I think objects are more confusing because they have more complex structures.
+3. Arrays are ordered lists of values, while objects are collections of key-value pairs. Arrays are accessed by index, while objects are accessed by keys.
+4. I would use arrays when I need to store a list of items, like a list of students or products. I would use objects when I need to represent more complex data with multiple properties, like a user profile or a car with various attributes.
+
 */
