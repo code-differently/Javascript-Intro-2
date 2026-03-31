@@ -1,6 +1,6 @@
-# 🚀 JavaScript Data Types Lab: Strings, Numbers, Arrays & Objects
+# JavaScript Data Types Lab: Strings, Numbers, Arrays & Objects
 
-## 📌 Overview
+## Overview
 In this lab, you will explore how JavaScript stores and manipulates data using:
 
 - Strings (text)
